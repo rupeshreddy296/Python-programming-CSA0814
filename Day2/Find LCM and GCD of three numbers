@@ -1,1 +1,12 @@
+import math
+a=10
+b=2
+c=3
+m=math.lcm(a,b,c)
+print(f"lcm of{a,b,c}=",m)
+n=math.gcd(a,b,c)
+print(f"gcd of{a,b,c}=",n)
 
+output:
+lcm of(10, 2, 3)= 30
+gcd of(10, 2, 3)= 1
