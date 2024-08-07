@@ -1,1 +1,10 @@
+num=int(input("enter the numbers:"))
+m=int(str(num)[::-1])
+if num==m:
+    print("panlindrome")
+else:
+    print("not panlindrome")
 
+output:
+enter the numbers:1221
+panlindrome
