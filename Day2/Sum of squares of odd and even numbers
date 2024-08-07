@@ -1,1 +1,19 @@
+def sum_squares(numbers):
+    sum_even_squares = 0
+    sum_odd_squares = 0
+    for num in numbers:
+        if num % 2 == 0:
+            sum_even_squares += num ** 2
+        else:
+            sum_odd_squares += num ** 2
+    return sum_even_squares, sum_odd_squares
+numbers_str = input("Enter a list of numbers separated by spaces: ")
+numbers = [int(x) for x in numbers_str.split()]
+sum_even, sum_odd = sum_squares(numbers)
+print(f"Sum of squares of even numbers: {sum_even}")
+print(f"Sum of squares of odd numbers: {sum_odd}")
 
+output:
+Enter a list of numbers separated by spaces: 2 4 6 5 7 2 8 
+Sum of squares of even numbers: 124
+Sum of squares of odd numbers: 74
