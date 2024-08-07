@@ -1,1 +1,6 @@
+n=(1,2,3,2,4,4)
+p=list(set(n))
+print(p)
 
+output:
+       [1, 2, 3, 4]
