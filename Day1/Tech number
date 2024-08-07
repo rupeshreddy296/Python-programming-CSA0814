@@ -1,1 +1,16 @@
+n = 2025
+s = str(n)
+if len(s) % 2 == 0:
+    first_half = s[:len(s)//2]
+    second_half = s[len(s)//2:]
+    total_sum = int(first_half) + int(second_half)
+    square_sum = total_sum ** 2
+    if square_sum == n:
+        print("The given number is a tech number")
+    else:
+        print("The given number is not a tech number")
+else:
+    print("The given number does not have an even number of digits and cannot be a tech number")
 
+output:
+      The given number is a tech number
