@@ -1,1 +1,15 @@
+from itertools import combinations
+num = input("Enter a number: ")
+for i in range(1, len(num) + 1):
+    for combo in combinations(num, i):
+        print(", ".join(combo))
 
+output:
+Enter a number: 123
+1
+2
+3
+1, 2
+1, 3
+2, 3
+1, 2, 3
