@@ -1,1 +1,14 @@
+import math
+num = float(input("Enter a number: "))
+square = num ** 2
+cube = num ** 3
+square_root = math.sqrt(num)
+print("Square of", num, "is:", square)
+print("Cube of", num, "is:", cube)
+print("Square root of", num, "is:", square_root)
 
+output:
+Enter a number: 2
+Square of 2.0 is: 4.0
+Cube of 2.0 is: 8.0
+Square root of 2.0 is: 1.4142135623730951
