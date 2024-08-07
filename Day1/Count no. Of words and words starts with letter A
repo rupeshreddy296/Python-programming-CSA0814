@@ -1,1 +1,19 @@
+sentence = input("Enter a string: ")
+upper_case_sentence = sentence.upper()
+print("Upper case:", upper_case_sentence)
+lower_case_sentence = sentence.lower()
+print("Lower case:", lower_case_sentence)
+word_count = len(sentence.split())
+print("Number of words:", word_count)
+words_starting_with_a = 0
+for word in sentence.split():
+    if word.startswith('a') or word.startswith('A'):
+        words_starting_with_a += 1
+print("Words starting with 'a' or 'A':", words_starting_with_a)
 
+output:
+Enter a string: kiran is topper
+Upper case: KIRAN IS TOPPER
+Lower case: kiran is topper
+Number of words: 3
+Words starting with 'a' or 'A': 0
