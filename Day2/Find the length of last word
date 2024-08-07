@@ -1,1 +1,11 @@
+def length_of_last_word(sentence):
+    words = sentence.split()
+    if words:
+        return len(words[-1])
+    return 0
+sentence = input("Enter a sentence: ")
+print("Length of the last word:", length_of_last_word(sentence))
 
+output:
+Enter a sentence: kiran is hero
+Length of the last word: 4
