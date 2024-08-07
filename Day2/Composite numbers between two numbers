@@ -1,1 +1,20 @@
+def is_composite(n):
+    if n < 4:  
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return True
+    return False
+def composite_numbers_between(a, b):
+    composites = []
+    for number in range(a, b + 1):
+        if is_composite(number):
+            composites.append(number)
+    return composites
+a = 10
+b = 30
+composite_numbers = composite_numbers_between(a, b)
+print(f"Composite numbers between {a} and {b}: {composite_numbers}")
 
+output:
+       Composite numbers between 10 and 30: [10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30]
