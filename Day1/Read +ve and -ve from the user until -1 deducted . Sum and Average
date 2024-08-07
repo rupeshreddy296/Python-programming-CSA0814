@@ -1,1 +1,35 @@
+positive_sum = 0
+negative_sum = 0
+positive_count = 0
+negative_count = 0
+user_input = input("Enter numbers separated by spaces (-1 to stop): ")
+numbers = [int(x) for x in user_input.split()]
+for num in numbers:
+    if num == -1:
+        break
+    elif num > 0:
+        positive_sum += num
+        positive_count += 1
+    elif num < 0:
+        negative_sum += num
+        negative_count += 1
+if positive_count > 0:
+    positive_average = positive_sum / positive_count
+    print(f"Sum of positive numbers: {positive_sum}")
+    print(f"Average of positive numbers: {positive_average}")
+else:
+    print("No positive numbers entered")
 
+if negative_count > 0:
+    negative_average = negative_sum / negative_count
+    print(f"Sum of negative numbers: {negative_sum}")
+    print(f"Average of negative numbers: {negative_average}")
+else:
+    print("No negative numbers entered")
+
+output:
+Enter numbers separated by spaces (-1 to stop): 1 2 3 -4 -5 -3 2 4 5 -1
+Sum of positive numbers: 17
+Average of positive numbers: 2.8333333333333335
+Sum of negative numbers: -12
+Average of negative numbers: -4.0
