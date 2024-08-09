@@ -1,1 +1,12 @@
+import math
+def sum_series(n):
+    total_sum = 0
+    for i in range(1, n + 1):
+        total_sum += math.factorial(i) / i
+    return total_sum
+n = 5  
+result = sum_series(n)
+print(f"The sum of the series for n={n} is {result}")
 
+output:
+The sum of the series for n=5 is 34.0
