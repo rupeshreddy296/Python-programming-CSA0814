@@ -1,1 +1,12 @@
+from datetime import datetime, timedelta
+def first_monday_next_month(date_input):
+    date = datetime.strptime(date_input, "%Y-%m-%d")
+    first_day_next_month = datetime(date.year, date.month % 12 + 1, 1)
+    days_to_monday = (7 - first_day_next_month.weekday()) % 7
+    return first_day_next_month + timedelta(days=days_to_monday)
+date_input = input("Enter the date (YYYY-MM-DD): ")
+print("First Monday of next month is:", first_monday_next_month(date_input).strftime("%Y-%m-%d"))
 
+output:
+Enter the date (YYYY-MM-DD): 2024-08-08
+First Monday of next month is: 2024-09-02
