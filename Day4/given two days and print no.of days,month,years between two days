@@ -1,1 +1,13 @@
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+date_str1 = input("Enter the first date (YYYY-MM-DD): ")
+date1 = datetime.strptime(date_str1, "%Y-%m-%d")
+date_str2 = input("Enter the second date (YYYY-MM-DD): ")
+date2 = datetime.strptime(date_str2, "%Y-%m-%d")
+difference = relativedelta(date2, date1)
+print(f"Years: {difference.years}, Months: {difference.months}, Days: {difference.days}")
 
+output:
+Enter the first date (YYYY-MM-DD): 2006-03-12
+Enter the second date (YYYY-MM-DD): 2010-07-29
+Years: 4, Months: 4, Days: 17
